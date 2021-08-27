@@ -1,0 +1,118 @@
+﻿@model ChurchMainPageViewModel
+@{
+    ViewBag.Title = "Churches";
+    Layout = "_ChurchesLayout";
+}
+
+<div class="main-page-sections">
+
+    <section class="user-body">
+        <div class="user-body-content">
+            <div class="user-body-side-bar">
+                <ul>
+                    <li>
+                        <a href="#">Churches</a>
+                    </li>
+                    <li>
+                        <a href="#">Make Payment</a>
+                    </li>
+                    <li>
+                        <a href="#">Sermons</a>
+                    </li>
+                </ul>
+            </div>
+            <video class="video" autoplay>
+                <source src="../video/heart.mp4" type="video/mp4" />
+            </video>
+            <div class="quote-events">
+                <div class="quotes">
+                    <div class="quote-img">
+                        <img src="~/image/bible.jpg" alt="bible image">
+                    </div>
+                    <div class="quote-text">
+                        <div class="quote-text-header">
+                            <p>Daily Verse</p>
+                            <i class="fas fa-bible"></i>
+                        </div>
+                        <div class="sub-text">
+                            <p>Genesis 1:1</p>
+                            <p>In the beginning God created the heavens and the earth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-events">
+                    <div class="events-header">
+                        <p>Upcoming Events</p>
+                    </div>
+                    <table>
+                        @foreach (var weeklyEvent in Model.Events)
+                        {
+                            <tr>
+                                <th>Event Name </th>
+                                <th>Event Description</th>
+                                <th>Church Name</th>
+                                <th>Event StartTime
+                                <th>
+                            </tr>
+                            <tr>
+                                <td>@weeklyEvent.EventName</td>
+                                <td>@weeklyEvent.EventDescription</td>
+                                @*<td>@weeklyEvent.Church</td>*@
+                                <td>@weeklyEvent.StartTime</td>
+                            </tr>
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="secon-section-main">
+
+        <section class="church-list">
+            <div class="church-list-header">
+                <h3>List of Churches</h3>
+                <div class="filter">
+                    <i class="fas fa-filter"></i>
+                    <input type="text">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="list-labels">
+            <div class="labels">
+                <div class="label-names">
+                    <h3>
+                        Name
+                    </h3>
+                    <h3>
+                        Location
+                    </h3>
+                    <h3>
+                        Service Time
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section class="church-list-log">
+            <ul>
+                @foreach (var church in Model.Churches)
+                {
+                    <li>
+
+                        <p>
+                            @church.ChurchName
+                        </p>
+                        <p>@church.ChurchCounty</p>
+                        <p>11:00AM - 1:00PM</p>
+                    </li>
+                }
+            </ul>
+        </section>
+
+    </div>
+</div>
+
+@section churchScripts{
+    <script src="~/lib/fontawesome/fontawesome-min.js"></script>
+}

@@ -1,0 +1,55 @@
+﻿@model UserViewModel.LoginUserDto
+@{
+    Layout = "_AccountLayout";
+    ViewData["Title"] = "Login";
+}
+
+<div class="container-fluid background_image">
+
+    <div class="main-wrapper">
+        <div class="right-side">
+            <h5>MTN Church Portal</h5>
+            <p>MTN brings you the best of church experience</p>
+            <button type="submit" class="left-btn">More about MTN</button>
+        </div>
+        <div class="left-side">
+            <form asp-action="Login" asp-controller="Account" method="post" >
+                <div class="card">
+                <h3>MTN Church Portal</h3>
+                    <div class="card-body">
+                        <div class="col-md-6 col-lg-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input asp-for="@Model.Username" type="text" name="Username" id="login-username" class="form-control" validationMessage="Username is Incorrect" />
+                                <span asp-validation-for="@Model.Username" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="username">Password</label>
+                                <input asp-for="@Model.Password" type="password" name="Password" id="login-password"  class="form-control" validationMessage="Password Is Incorrect" />
+                                <span asp-validation-for="@Model.Password" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-12 col-sm-6">
+                            <button type="submit" class="login-btn form-control" id="loginForm">Login</button>
+                        </div>
+                        <div>
+                            <div class="col-md-6 col-lg-12 col-sm-6">
+                                <label style="padding-top: 1rem;">Don't have account?</label>
+                                <button type="submit" class="sign-btn form-control" id="redirect-signup">Signup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<link href="~/css/account.css" rel="stylesheet" />
+
+<script>
+
+</script>
+

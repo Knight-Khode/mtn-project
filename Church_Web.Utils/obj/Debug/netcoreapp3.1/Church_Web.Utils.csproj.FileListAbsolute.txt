@@ -1,0 +1,12 @@
+C:\Users\DanielRockson\source\repos\Church_Web.Utils\bin\Debug\netcoreapp3.1\Church_Web.Utils.deps.json
+C:\Users\DanielRockson\source\repos\Church_Web.Utils\bin\Debug\netcoreapp3.1\Church_Web.Utils.dll
+C:\Users\DanielRockson\source\repos\Church_Web.Utils\bin\Debug\netcoreapp3.1\Church_Web.Utils.pdb
+C:\Users\DanielRockson\source\repos\Church_Web.Utils\obj\Debug\netcoreapp3.1\Church_Web.Utils.csproj.AssemblyReference.cache
+C:\Users\DanielRockson\source\repos\Church_Web.Utils\obj\Debug\netcoreapp3.1\Church_Web.Utils.AssemblyInfoInputs.cache
+C:\Users\DanielRockson\source\repos\Church_Web.Utils\obj\Debug\netcoreapp3.1\Church_Web.Utils.AssemblyInfo.cs
+C:\Users\DanielRockson\source\repos\Church_Web.Utils\obj\Debug\netcoreapp3.1\Church_Web.Utils.csproj.CoreCompileInputs.cache
+C:\Users\DanielRockson\source\repos\Church_Web.Utils\obj\Debug\netcoreapp3.1\Church_Web.Utils.dll
+C:\Users\DanielRockson\source\repos\Church_Web.Utils\obj\Debug\netcoreapp3.1\Church_Web.Utils.pdb
+C:\Users\DanielRockson\source\repos\Church_Web.Utils\bin\Debug\netcoreapp3.1\Church_Web.Data.dll
+C:\Users\DanielRockson\source\repos\Church_Web.Utils\bin\Debug\netcoreapp3.1\Church_Web.Data.pdb
+C:\Users\DanielRockson\source\repos\Church_Web.Utils\obj\Debug\netcoreapp3.1\Church_Web.Utils.csproj.CopyComplete

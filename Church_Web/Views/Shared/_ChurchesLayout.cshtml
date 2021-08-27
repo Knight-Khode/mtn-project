@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@(ViewBag.Title == null ? "Welcome" : ViewBag.Title) | MTN Church Portal</title>
+    <meta name="description" content="MTN Liberia Church Web Portal" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    @*<link href="~/css/main.css" rel="stylesheet" />*@
+    <link href="~/css/church.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="~/image/logo.jpeg" alt="logo">
+                </div>
+                <p>Church Portal MTN</p>
+            </div>
+            <div class="profile">
+                <div class="profile-content">
+                    <i class="fas fa-user-circle"></i>
+                    <p>John Doe |</p>
+                </div>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </nav>
+    @RenderBody()
+
+    <footer class="border-top footer text-muted" style=" background-color: rgb(250, 205, 3);">
+        <div class="container">
+            MTN Liberia &copy; @DateTime.Now.Year All Rights Reserved - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("churchScripts", required: false)
+</body>
+</html>
